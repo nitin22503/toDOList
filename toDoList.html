@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To DO LIST</title>
+    <style>
+      body {
+        background: linear-gradient(to right, #13547a, #80d0c7);
+        min-height: 100%;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      .todo {
+        width: 580px;
+        height: 385px;
+        margin-left: 360px;
+        margin-top: 120px;
+        background-color: rgb(148, 159, 197);
+        border: 5px solid #f3f973;
+        border-radius: 10px;
+      }
+      .header {
+        height: 68px;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 10;
+        background-color: #7dbf6a;
+        color: #c55050;
+        padding-top: 5px;
+        padding-bottom: 0px;
+        display: block;
+        border-bottom: 5px solid black;
+      }
+      .desc {
+        margin-top: -16px;
+        height: 80%;
+        margin-left: -40px;
+      }
+      input[type="checkbox"] {
+        position: relative;
+        top: 22px;
+        right: 20px;
+        float: right;
+      }
+      input[type="checkbox"]:checked + label {
+        text-decoration: line-through;
+        color: #fff;
+      }
+      .list {
+        font-size: 30px;
+        list-style-type: none;
+      }
+      .list li {
+        float: left;
+        width: 100%;
+      }
+      label {
+        padding: 10px;
+        float: left;
+        width: 90%;
+      }
+      .orange {
+        background-color: #383879;
+        color: #e6660bcc;
+      }
+      .light-orange {
+        background-color: #cea356;
+        color: #cc3636;
+      }
+      .checkbox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 4px;
+        height: 25px;
+        width: 25px;
+        /* background-color: #eee; */
+        background: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="todo">
+      <div class="header">
+        <span>TO DO LIST</span>
+      </div>
+      <div class="desc">
+        <ul class="list">
+          <li class="orange">
+            <input type="checkbox" />
+            <label for="">GO to THE GYM</label>
+          </li>
+          <li class="light-orange">
+            <input type="checkbox" />
+            <label for="">GO SHOPPING</label>
+          </li>
+          <li class="orange">
+            <input type="checkbox" />
+            <label for="">FINISH JAVASCRIPT TUTORIAL</label>
+          </li>
+          <li class="light-orange">
+            <input type="checkbox" />
+            <label for="">READ FOR 60 MINUTES</label>
+          </li>
+          <li class="orange">
+            <input type="checkbox" />
+            <label for="">GeT A HAIR CUT</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
